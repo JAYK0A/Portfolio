@@ -1,0 +1,29 @@
+body {
+	margin: 0px;
+}
+
+#heading {
+	background: gray; 
+	height: 360px
+}
+.button_banner {
+	background: black; 
+	height: rem2; 
+	padding: 5px;
+	text-align: center;
+}
+
+.button_banner a:hover 
+{
+	font-size: 20pt;
+	color: blue;
+}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	position: relative;
+	top: 100px;	
+
+}

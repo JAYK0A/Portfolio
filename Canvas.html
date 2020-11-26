@@ -1,0 +1,81 @@
+<html>
+  <head>
+	<title>HTML Canvas</title>
+  <head>
+  <body>
+	<canvas id="canvas" style="background: gray"></canvas>
+	<script>
+function main()
+{
+	// Get a reference to our canvas by the specified ID
+	var canvas = document.getElementById("canvas");
+	
+	// set the width and height
+	canvas.width = 640;
+	canvas.height = 480;
+	
+	var ctx = canvas.getContext('2d');
+	
+	draw(ctx);
+	 load();
+}
+
+function draw(ctx)
+{
+ ctx.fillStyle = 'gray';
+ ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+ ctx.drawImage(playerImage, x, 10);
+ x++;
+ window.requestAnimationFrame(function(){draw(ctx);});
+}
+
+// Store a variable for the current x position of the red box
+var x = 10;
+
+
+// Set clear color to gray and fetch width and height from canvas
+ctx.fillStyle = 'gray';
+ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+ctx.fillStyle = 'red';
+ctx.fillRect(x, 10, 100, 100);
+x++;
+window.requestAnimationFrame(function(){draw(ctx);});
+
+// Use a variable to store our player image
+var playerImage;
+function load()
+{
+ // Allocate a new image and assign it to our previous variable
+ playerImage = new Image();
+ // Set the src (the path of the image). This will be loaded by the
+ // browser but may not be loaded immediately
+ playerImage.src = "player.png";
+}
+
+
+
+// image, sourcex, sourcey, sourcewidth, sourceheight,
+// destx, desty, destwidth, destheight
+ctx.drawImage(playerImage, 0, 0,
+ playerImage.width / 2, playerImage.height / 2,
+ x, 10, playerImage.height / 2, playerImage.height / 2);
+
+function keydown(event)
+{
+ if(event.key == "ArrowLeft")
+ {
+ x--;
+ }
+ else if(event.key == "ArrowRight")
+ {
+ x++;
+ }
+}
+window.onload = main;
+window.addEventListener("keydown", keydown);
+window.onload = main;
+window.addEventListener("keyup", keydown);
+
+	</script>
+  </body>
+</html>
