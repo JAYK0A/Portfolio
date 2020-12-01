@@ -13,10 +13,9 @@ body {
 	text-align: center;
 }
 
-.button_banner a:hover 
-{
-	font-size: 20pt;
-	color: blue;
+.button_banner a:hover {
+	//font-size: 20pt;
+	//color: blue;
 }
 .center {
 	display: block;
