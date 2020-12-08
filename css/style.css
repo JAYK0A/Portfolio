@@ -1,10 +1,15 @@
 body {
 	margin: 0px;
+	background-color: lightcoral; 
+	margin-top: 180px;
 }
 
 #heading {
 	background: gray; 
-	height: 200px
+	height: 150px;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 .button_banner {
 	font-family: "Lucida Console";
@@ -13,6 +18,7 @@ body {
 	height: rem2; 
 	padding: 5px;
 	text-align: center;
+	margin-top: 20px;
 }
 .button_banner a {
 	transition: 0.5s;
@@ -23,16 +29,74 @@ body {
 	color: red;
 	transition: 0.5s;
 }
+.page_button a {
+	text-decoration: none;
+	color: white;
+}	
 .center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	top: 20px;	
+
+}
+.center_left {
+	display: inline-block;
+	margin-left: 650px;
+	margin-right: 100px;
+	width: 10%;
 	position: relative;
 	top: 50px;	
-
+}
+.center_right {
+	display: inline-block;
+	margin-left: 100px;
+	margin-right: 100px;
+	width: 10%;
+	position: relative;
+	top: 50px;
 }
 #footer {
 	background: gray; 
-	height: 200px
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;	
+	height: 50px;
+	height: rem2; 
 }
+.footer_banner {
+	background: black; 
+	height: 5px; 
+	padding: 5px;
+	margin-top: 100px
+}
+.footer_border {
+	padding-top: 500px;
+	background: black; 
+	height: rem2; 
+	padding: 5px;
+	text-align: center;
+}	
+.font_style {
+	font-family: "Lucida Console";
+	font-size: px;
+}	
+.text_box {
+    height: rem2;
+	width: rem2;
+    border: 5px solid black;
+    position: relative;	
+	background-color: white;
+}	
+.text_box_link  {
+    height: rem2;
+	width: rem2;
+    border: 5px solid black;
+    position: relative;	
+	background-color: crimson;
+}		
+.text_box_link:hover {
+	background-color: black;
+	transition: 0.5s;
+}	
