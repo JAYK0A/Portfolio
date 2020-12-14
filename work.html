@@ -1,28 +1,99 @@
 <html>
 	<head>
-		<title>Jake Warren - About</title>
+		<title>Jake Warren - My Work</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+	
 	<div id="heading">
 		<img class="center" style="width: 800px;" src="images/Logo.png">
 			<div class="button_banner">
-		<a style="font-weight: bold;" href="index.html">Home</a> 
-		<a style="font-weight: bold; color: white">|</a>
-		<a style="font-weight: bold;" href="work.html">My Work</a>
-		<a style="font-weight: bold; color: white">|</a>
-		<a style="font-weight: bold;" href="about.html">About</a>
-		<a style="font-weight: bold; color: white">|</a>
-		<a style="font-weight: bold;" href="contact.html">Contact</a>
-	</div>
+			<a style="font-weight: bold;" href="index.html">Home</a> 
+			<a style="font-weight: bold; color: white">|</a>
+			<a style="font-weight: bold;" href="work.html">My Work</a>
+			<a style="font-weight: bold; color: white">|</a>
+			<a style="font-weight: bold;" href="about.html">About</a>
+			<a style="font-weight: bold; color: white">|</a>
+			<a style="font-weight: bold;" href="contact.html">Contact</a>
+		</div>
 	</div>
 	<head>
+	
 	<body>
 	
-	<p style="font-weight: bold; color: red">Goodbye!</p>
+		<div>
+			<p class="center font_style text_box" style="font-weight: bold; font-size: 20px; text-align: center;">Below is a variety of different pieces of work I’ve done over the years, including my drawings, pixel art, and 3d unreal engine work. My drawings are made using 
+			Clip Studio Paint, Aseprite and Photoshop, whereas my 3d work is made using 3ds Max, Maya and Unreal Engine.</p>
+		</div>
+		
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		  <span class="dot" onclick="currentSlide(5)"></span>
+		  <span class="dot" onclick="currentSlide(6)"></span>
+		  <span class="dot" onclick="currentSlide(7)"></span>
+		</div>
+		
+		<div class="slideshow-container">
+
+		  <div class="mySlides fade">
+			<div class="numbertext">1 / 7</div>
+			<img src="images/3dwork.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext" style="color: black;">2 / 7</div>
+			<img src="images/denki.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">3 / 7</div>
+			<img src="images/kirby.png" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides fade">
+			<div class="numbertext">4 / 7</div>
+			<img src="images/knight.png" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides fade">
+			<div class="numbertext" style="color: black;">5 / 7</div>
+			<img src="images/mista.png" style="width:100%">
+		  </div>
+		
+		  <div class="mySlides fade">
+			<div class="numbertext" style="color: black;">6 / 7</div>
+			<img src="images/clipstudio.png" style="width:100%">
+		  </div>
+		 
+		  <div class="mySlides fade">
+			<div class="numbertext">7 / 7</div>
+			<img src="images/sailormoon.png" style="width:100%">
+		  </div>
+
+
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<script src="javascript/javascript.js"></script>
+
+		<div>
+			<p class="center font_style text_box" style="font-weight: bold; font-size: 20px; text-align: center; width: 400px; ">I also made all the artwork for each element of 
+			my twitch channel which I frequently stream on!</p> 
+			<video class="center vidborder" controls>
+			<source src="videos/spook.mp4" type="video/mp4">
+			</video>
+		</div>	
+
+		
 	</body>
 	
 	<div class="footer_banner">
 	</div>
-	</body>
+
 	<footer>
 	<div class="footer_border" id="footer" style="text-align: center;">
 	Copyright &copy; 2020 Jake Warren
